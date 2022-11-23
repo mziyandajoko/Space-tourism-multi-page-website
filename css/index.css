@@ -1,6 +1,12 @@
-/* ------------------- */
+/* Custom properties   */
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-accent: 150 77% 90%;
+  --clr-white: 0 0% 100%;
+}
+
 /* Reset               */
-/* ------------------- */
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing */
 *,
@@ -91,4 +97,33 @@ select {
 .box {
   background: lightblue;
   padding: 3rem;
+}
+
+/* Colors */
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+
+.bg-accent {
+  background-color: hsl(var(--clr-accent));
+}
+
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+
+.text-accent {
+  color: hsl(var(--clr-accent));
+}
+
+.text-white {
+  color: hsl(var(--clr-white));
+}
+
+.reduce-opacity {
+  background-color: hsl(var(--clr-accent)/0.2);
 }
