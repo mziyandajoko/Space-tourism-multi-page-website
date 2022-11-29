@@ -278,4 +278,8 @@ a, li {
 
 .underline-indicators > .active {
   border-color: hsl(var(--clr-white)/1);
+}
+
+button {
+  border: none;
 }/*# sourceMappingURL=index.css.map */
