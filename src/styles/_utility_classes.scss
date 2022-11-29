@@ -50,9 +50,10 @@ border: 0;
   }
 }
 
-a{
+a,li{
   // color: var(--text-dark);
   text-decoration: none;
+  display: block;
 }
 
 

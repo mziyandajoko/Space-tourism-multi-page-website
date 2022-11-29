@@ -201,8 +201,9 @@ select {
   color: hsl(var(--clr-white)/0.25);
 }
 
-a {
+a, li {
   text-decoration: none;
+  display: block;
 }
 
 /* colors */
