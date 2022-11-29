@@ -4,21 +4,22 @@
   aspect-ratio: 1;
   display: grid;
   place-items: center;
-  transition: ease-in-out;
-
+  position: relative;
   
-}
-
-
-.circle:hover{ 
-  
-  border-radius: 50%;
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  padding:0px 4em;
-  &:hover{
-    background-color:red;
-
+  &::after{
+    content:'';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: hsl(var(--clr-white) / .15);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 500ms linear, transform 500ms ease-in-out;
+  }
+  &:hover::after{
+    transform: scale(1.5);
+    opacity: 1;
   }
 }
+
