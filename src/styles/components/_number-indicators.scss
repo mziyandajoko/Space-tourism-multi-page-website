@@ -9,11 +9,11 @@
   place-items: center;
   cursor: pointer;
   font-weight: 700;
-
+  
   &:hover,
   &:focus {
-   background-color: hsl( var(--clr-white) / .5);
- }
+    border: 1px solid hsla(var(--clr-white));
+   }
 }
 
 .number-indicators > [aria-selected="true"]{
