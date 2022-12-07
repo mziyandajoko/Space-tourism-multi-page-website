@@ -1,0 +1,22 @@
+.number-indicators > *{
+  border-radius: 50%;
+  background-color: hsla(var(--clr-dark));
+  color: hsl(var(--light));
+  border: 1px solid hsla(var(--clr-white) / .25);
+  padding:0px 1em;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+   background-color: hsl( var(--clr-white) / .5);
+ }
+}
+
+.number-indicators > [aria-selected="true"]{
+  background-color: hsl( var(--clr-white));
+  color: hsla(var(--clr-dark));
+}

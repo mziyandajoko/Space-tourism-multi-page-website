@@ -302,4 +302,25 @@ button {
 
 .dot-indicators > [aria-selected=true] {
   background-color: hsl(var(--clr-white)/1);
+}
+
+.number-indicators > * {
+  border-radius: 50%;
+  background-color: hsla(var(--clr-dark));
+  color: hsl(var(--light));
+  border: 1px solid hsla(var(--clr-white)/0.25);
+  padding: 0px 1em;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+.number-indicators > *:hover, .number-indicators > *:focus {
+  background-color: hsl(var(--clr-white)/0.5);
+}
+
+.number-indicators > [aria-selected=true] {
+  background-color: hsl(var(--clr-white));
+  color: hsla(var(--clr-dark));
 }/*# sourceMappingURL=index.css.map */
